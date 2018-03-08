@@ -1,0 +1,8 @@
+
+<div *ngFor=" let movie of moviestoDisplay">
+
+<p>Movie title: {{ movie.title }}</p>
+<img [src]="movie.poster" alt="" width="200px" height="300px">
+<a [routerLink]="['/movie', movie.id]">Details ...</a>
+
+</div>
